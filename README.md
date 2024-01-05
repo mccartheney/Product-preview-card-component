@@ -40,7 +40,8 @@ Users should be able to:
 
 ### What I learned
 
-In this challenge i found a obstacule. It was change the image by the width of the user screen and i learn whe can use the tag <picture> to change the image according the user sreen width.
+In this challenge i found a obstacule. 
+It was change the image by the width of the user screen and i learn whe can use the tag ```<picture>``` to change the image according the user sreen width.
 
 ```html
   <picture>
@@ -49,7 +50,7 @@ In this challenge i found a obstacule. It was change the image by the width of t
   </picture>
 ```
 
-inside the <img> we put the default src and in each <source> we put the width and the another src the other image
+inside the ```<img>``` we put the default src and in each ```<source>``` we put the width and the another src the other image
 
 ## Author
 
