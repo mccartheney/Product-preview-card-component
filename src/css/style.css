@@ -16,14 +16,17 @@ body {
 .main {
     background-color: hsl(0, 0%, 100%);
     width: 90%;
-    min-height: 90vh;
     border-radius: 15px;
+}
+@media (max-width: 1024px) {
+    .main .image img {
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
 }
 
 .main .image img{
     width: 100%;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
 }
 
 .textContent {
@@ -33,31 +36,60 @@ body {
 .textContent .subtitle {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    font-size: 13px;
     color : hsla(212, 21%, 14%, 0.526);
+    margin-bottom: 15px;
 }
 
 .textContent .title {
     font-family: 'Fraunces', serif;
     font-weight: 700;
     color: hsl(212, 21%, 14%);
+    margin-bottom: 15px;
 }
 
 .textContent .description {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 15px;
     color: hsla(212, 21%, 14%, 0.526);
 } 
 
 .textContent .prices {
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
+    font-family: 'Fraunces', serif;
+    justify-content: start;
+    align-items: center;
+}
+
+.textContent .prices .discountPrice {
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+    margin-right: 15px;
 }
 
 .textContent .prices .originalPrice {
     text-decoration: line-through;
+    color :hsla(212, 21%, 14%, 0.526);
 }
 
 button {
     background-color: hsl(158, 36%, 37%);
+    font-family: 'Montserrat', sans-serif;
     color: hsl(0, 0%, 100%);
     border: none;
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button img {
+    margin-right: 15px;
 }

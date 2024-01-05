@@ -1,1 +1,37 @@
-@media only screen and (max-width: 4000px) and (min-width: 1025px) {}
+@media (min-width: 1025px) {
+    .main {
+        display: flex;
+        flex-direction: row;
+        border-radius: 15px;
+        width: 650px;
+        height: 450px;
+    }
+    
+    .image {
+        width: 50%;
+    }
+    
+    .image  img {
+        height: 100%;
+        width: 100%;
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    .title {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .description {
+        font-size: 26px;
+    }
+
+    .textContent {
+        width: 50%;
+    }
+
+    button:hover {
+        background-color: hsl(212, 21%, 14%);
+        cursor: pointer;
+    }
+}
